@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!--material cdn  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+ 
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="sk logo.png" alt="logo">
+                    <h2>s<span class="danger">pu</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="#">
+                    <span class="material-icons-sharp">grid_view</span>
+                        <h3>Departrment</h3>
+                </a>
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">person_outline</span>
+                        <h3>about</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">receipt_long</span>
+                        <h3>Pending task</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">insights</span>
+                    <h3>work flow</h3>
+                </a>
+                
+                <a href="#">
+                    <span class="material-icons-sharp">mail_outline</span>
+                    <h3>message</h3>
+                    <span class="message-count">26</span>
+
+                </a>
+                        
+                <a href="#">
+                    <span class="material-icons-sharp">inventory</span>                
+                        <h3>Complete task</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">settings</span>
+                        <h3>setting</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">logout</span>
+                        <h3>log out</h3>
+                </a>
+                
+                </a>
+            </div>
+        </aside>
+        <!-- end of aside -->
+
+        <main>
+            <h1>Centralized Dashboard</h1>
+            <div class="date">
+                <input type="date">
+            </div>
+
+            <div class="insights">
+                <div class="sales">
+                    <span class="material-icons-sharp">analytics</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Sankalchand patel university </h3>
+                            <h1>work</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 hours</small>
+                </div>
+                <div class="expenses">
+                    <span class="material-icons-sharp">bar_chart</span>    
+                    <div class="middle">
+                        <div class="left">
+                            <h3>S.P.C.E</h3>
+                            <h1>work</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>62%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 hours</small>
+                </div>
+                <div class="income">
+                    <span class="material-icons-sharp">stacked_line_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>NMCRC</h3>
+                            <h1>work</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>44%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 hours</small>
+                </div>
+            </div>
+
+            <div class="recent-orders">
+                <h2>Recent Orders</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Product Number</th>
+                            <th>Payment</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>    
+                        <tr>
+                            <td>Physics manual</td>
+                            <td>85631</td>    
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Mechanical manual </td>
+                            <td>85621</td>    
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>File Page</td>
+                            <td>8566</td>    
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Anatomy by BDC</td>        
+                            <td>2503</td>    
+                            <td>Due</td>
+                            <td class="warning">Pending</td>    
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Bio chemestry with VAsudevam</td>
+                            <td>23236</td>    
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                    </tbody>
+                </table>    
+                <a href="#">Show All</a>
+            </div>
+        </main> 
+        <!-- end of main -->
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons-sharp active">light_mode</span>
+                    <span class="material-icons-sharp">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Prakash patel</b></p>
+                        <small class="text-muted">chairmain of spu</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="kj.png">
+                    </div>
+                </div>
+            </div>
+            <div class="recent-updates">
+                <h2>Recent Updates</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="jjpsir.png.jpg">
+                        </div>
+                        <div class="message">
+                            <p><b>jayesh patel</b> complete his spce work. </p>
+                            <small class="text-muted">2 minutes ago</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="nmcrc.png.jpg">
+                        </div>
+                        <div class="message">
+                            <p><b>Vijaysinh badhel</b> complete his nmcrc work. </p>
+                            <small class="text-muted">2 minutes ago</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="sspc.png.jpg">
+                        </div>
+                        <div class="message">
+                            <p><b>Yogesh patel</b> complete his sspc work. </p>
+                            <small class="text-muted">2 minutes ago</small>
+                        </div>
+                    </div>
+                </div>
+        </div>  
+        <!-- end of right -->
+         
+        <div class="sales-analytics">
+            <h2>spu info</h2>
+            <div class="item online">
+                <div class="icon">
+                    <span class="material-icons-sharp">celebration</span>
+                </div>
+                <div class="right">
+                    <div class="info">
+                        <h3>vollyball winner</h3>
+                        <small class="text-muted">Last 24 hours</small>
+                    </div>
+                    <h5 class="success">spce</h5>
+                    <h3>1st prize</h3>
+                </div>
+            </div>
+            <div class="item offline">    
+                <div class="icon">
+                    <span class="material-icons-sharp">menu_book</span>
+                </div>
+                <div class="right">
+                    <div class="info">
+                        <h3>exam paper</h3>
+                        <small class="text-muted">Last 24 hours</small>
+                    </div>
+                    <h5 class="danger"></h5>
+                    <h3></h3>
+                </div>
+            </div>
+            <div class="item customers">
+                <div class="icon">
+                    <span class="material-icons-sharp">person</span>
+                </div>
+                <div class="right">
+                    <div class="info">
+                        <h3>student event</h3>
+                        <small class="text-muted">Last 24 hours</small>
+                    </div>
+                    <h5 class="success"></h5>
+                    <h3></h3>
+                </div>
+            </div>    
+            <div class="item add-product">
+                <div>
+                    <span class="material-icons-sharp">add</span>
+                    <h3>Add Product</h3>
+                </div>
+            </div>  
+            
+        </div>
+
+    </div>
+
+    <script src="orders.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
