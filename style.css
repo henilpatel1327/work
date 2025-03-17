@@ -205,7 +205,7 @@ aside .sidebar{
     background:black;
     display: flex;
     flex-direction: column;
-    height: 86vh;
+    height: 100vh;
     position: relative;
     top: 3rem;
 }
